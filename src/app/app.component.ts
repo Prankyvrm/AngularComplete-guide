@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angularcomplete-guide';
+  featureSelected: string = 'recipe';
+  OnNavigationSelected(featureSelected: string) {
+    this.featureSelected = featureSelected;
+  }
+
 }

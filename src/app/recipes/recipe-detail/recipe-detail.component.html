@@ -1,6 +1,9 @@
 <div class="row">
+    <img class="rounded img-fluid" style="max-height: 200px" [src]=selectedRecipe.imagePath alt="">
+</div>
+<div class="row">
     <div class="col-12">
-        <h2>Recipe Name</h2>
+        <h2> {{ selectedRecipe.name }}</h2>
     </div>
 </div>
 <div class="row">
@@ -20,7 +23,7 @@
 </div>
 <div class="row">
     <div class="col-12">
-        Descriptions
+        {{selectedRecipe.description}}
     </div>
 </div>
 <div class="row">
